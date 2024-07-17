@@ -1,0 +1,33 @@
+Oficina
+id: 
+ficha del inmueble:
+
+Inmueble
+id
+tipo: ser pisos nuevos (apartamentos nuevos), pisos de ocasión(apartamentos usados), villas, casas y locales.
+tamaño: en metros cuadrados
+direccion: completa
+Los inmuebles pueden ofrecerse sólo para venta, sólo para alquiler, o para venta o alquiler.
+Precio
+numero de referencia:
+telefono del propietario
+llaves:
+visitas
+
+
+si es villa
+2 varoables tamaño de la parcela y la urbanización en la que se encuentra
+
+
+De pisos, villas y casas se quiere conocer cuántas estancias posee de cada tipo: habitaciones, baños, aseos,cocinas, etc., 
+caracteristicas
+
+locales sólo se quiere conocer sus características: número de puertas de entrada, si es diáfano (vitrina a la calle), si está acondicionado, etc. De pisos, casas y locales se desea conocer la zona de la ciudad en la que se encuentran.
+
+cliente
+
+Relación 1 a muchos entre Oficina y Inmueble: Una oficina puede tener varios inmuebles, pero un inmueble pertenece a una única oficina.
+Relación 1 a muchos entre ZonaCiudad y Inmueble: Una zona de la ciudad puede tener varios inmuebles, pero un inmueble pertenece a una única zona.
+Relación muchos a muchos entre Cliente e Inmueble a través de las visitas: Un cliente puede visitar varios inmuebles, y un inmueble puede ser visitado por varios clientes.
+Relación 1 a muchos entre Cliente y Visita: Un cliente puede realizar varias visitas, pero una visita es realizada por un único cliente.
+Relación 1 a muchos entre Inmueble y Visita: Un inmueble puede tener varias visitas, pero una visita está asociada a un único inmueble.
